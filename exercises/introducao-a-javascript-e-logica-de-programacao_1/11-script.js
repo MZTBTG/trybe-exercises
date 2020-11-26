@@ -12,7 +12,7 @@ if (salarioBruto <= 1556.94 && salarioBruto > 0) {
     inss = 570.88; 
 } else {
     inss = undefined;
-    console.log("Erro ao calcular INSS: Entrada inválida.");
+    console.log('Erro ao calcular INSS: Entrada inválida.');
 };
 
 let salarioDeduzido = salarioBruto - inss;
@@ -29,7 +29,7 @@ if (salarioDeduzido <= 1903.98 && salarioDeduzido > 0) {
     ir = (0.275 * salarioDeduzido) - 869.36;
 } else {
     ir = undefined;
-    console.log("Erro ao calcular IR: Entrada inválida.")
+    console.log('Erro ao calcular IR: Entrada inválida.')
 };
 
 let salarioLiquido = salarioDeduzido - ir;
