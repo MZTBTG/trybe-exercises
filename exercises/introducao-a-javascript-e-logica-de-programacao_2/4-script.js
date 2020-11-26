@@ -8,7 +8,7 @@ for(let fator = 0; fator < numbers.length; fator += 1) {
 let media = total / numbers.length;
 
 if (media > 20) {
-    console.log("O valor da média é maior que 20.")
+    console.log('O valor da média é maior que 20.')
 } else {
-    console.log("O valor da média é menor ou igual a 20.")
+    console.log('O valor da média é menor ou igual a 20.')
 };
