@@ -5,4 +5,4 @@ for(let fator = 0; fator < numbers.length; fator += 1) {
    total += numbers[fator];
 };
 
-console.log('A soma total dos  ' + numbers.length + ' números é ' + total + '!')
+console.log('A soma total dos  ' + numbers.length + ' números é ' + total + '!');
