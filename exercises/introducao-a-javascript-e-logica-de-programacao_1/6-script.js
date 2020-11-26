@@ -17,4 +17,4 @@ if (peca == "bispo") {
     console.log(peca + " se move em todas as direções, uma casa de cada vez.");
 } else {
     console.log("Isso não é uma peça de Xadrez!")
-}
+};
