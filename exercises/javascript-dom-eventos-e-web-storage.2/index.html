@@ -67,6 +67,7 @@
         document.querySelector('body').appendChild(div);
 
         let divChild = document.createElement('div');
+        divChild.className = 'center-content';
         document.querySelector('div').appendChild(divChild);
 
         let tagP = document.createElement('p');
@@ -94,6 +95,19 @@
             document.querySelector('ul').appendChild(list);
         }
         
+        for (index = 0; index < 3; index += 1) {
+          let h3 = document.createElement('h3');
+          document.querySelectorAll('.main-content')[0].appendChild(h3);
+          h3.className = 'description'
+        }
+
+        h1.className = 'title';
+
+        document.querySelector('.main-content').removeChild(divNetaEsquerda);
+
+        document.querySelectorAll('.right-content')[0].style.marginRight = 'auto';
+
+        document.querySelectorAll('.center-content')[0].style.backgroundColor = 'blue';
       
     </script>
   </body>
