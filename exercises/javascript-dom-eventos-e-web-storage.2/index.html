@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+
+        let h1 = document.createElement('h1');
+        h1.innerText = 'Exercício 5.2 - JavaScript DOM';
+        document.querySelector('body').appendChild(h1);
+
+        let div = document.createElement('div');
+        div.className = 'main-content';
+        document.querySelector('body').appendChild(div);
+
+        let divChild = document.createElement('div');
+        document.querySelector('div').appendChild(divChild);
+
+        let tagP = document.createElement('p');
+        tagP.innerText = 'Sei lá eu o que eu posso escrever aqui, to olhando pro nada aqui e to pensando: E se eu alterar a propriedade Type=Password de algum formulário HTML?';
+        document.querySelectorAll('.main-content')[0].appendChild(tagP);
+        
+        let divNetaEsquerda = document.createElement('div');
+        divNetaEsquerda.className = 'left-content';
+        document.querySelectorAll('.main-content')[0].appendChild(divNetaEsquerda);
+
+        let divNetaDireita = document.createElement('div');
+        divNetaDireita.className = 'right-content';
+        document.querySelectorAll('.main-content')[0].appendChild(divNetaDireita);
+
+        let img = document.createElement('img');
+        img.src = 'https://picsum.photos/200';
+        img.className = 'small-image';
+        document.querySelectorAll('.left-content')[0].appendChild(img);
+
+        let ul = document.createElement('ul');
+        document.querySelectorAll('.right-content')[0].appendChild(ul);
+        for (index = 1; index <= 10; index += 1) {
+            let list = document.createElement('li');
+            list.innerText = index;
+            document.querySelector('ul').appendChild(list);
+        }
+        
+      
+    </script>
+  </body>
+</html>
